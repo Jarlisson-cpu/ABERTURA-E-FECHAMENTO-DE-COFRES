@@ -1,14 +1,32 @@
-# ABERTURA-E-FECHAMENTO-DE-COFRES
-# Métodos numéricos
+# 📉 Métodos Numéricos — Raízes de Funções
 
-O script `desenvolvimento.py` calcula raízes de uma função usando os métodos da bissecção, de Newton e das secantes.
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 
-## Como executar o teste
+Script em Python que encontra raízes da função **f(x) = 4 + x·cos(x)** usando três métodos numéricos clássicos e compara o número de iterações de cada um.
 
-No terminal, dentro da pasta do projeto, execute:
+## 🔢 Métodos implementados
 
-```powershell
+| Método | Ideia |
+|---|---|
+| **Bissecção** | Divide o intervalo ao meio até encontrar a mudança de sinal |
+| **Newton-Raphson** | Usa a derivada `f'(x) = cos(x) − x·sen(x)` para convergir mais rápido |
+| **Secantes** | Aproxima a derivada usando dois pontos anteriores |
+
+Parâmetros: tolerância `1e-5` e no máximo `1000` iterações.
+
+## 🚀 Como executar
+
+```bash
+cd "me algebra"
 python desenvolvimento.py
 ```
 
-O programa imprime as raízes encontradas por cada método e o número de iterações. Este projeto não possui uma suíte de testes automatizados configurada; esse comando executa o script e permite verificar o resultado.
+O programa imprime as raízes encontradas por cada método e o número de iterações.
+
+## 🧠 Conceitos praticados
+
+Cálculo numérico · convergência · tratamento de erros (`ValueError`, `ZeroDivisionError`)
+
+---
+
+👤 Feito por **[Jarlisson Brito](https://github.com/Jarlisson-cpu)** · [LinkedIn](https://www.linkedin.com/in/jarlisson-brito-602909368/)
